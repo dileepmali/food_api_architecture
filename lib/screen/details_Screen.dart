@@ -5,15 +5,26 @@ import 'package:sizer/sizer.dart';
 import '../controller/custom_button.dart';
 import '../controller/date_formate.dart';
 import '../getx/choice_chip.dart'; // For getting all products
+<<<<<<< HEAD
 import '../helper_class/bar_code.dart';
 import '../helper_class/details_row.dart';
 import '../helper_class/icons_row.dart';
 import '../helper_class/qr_code.dart';
 import '../helper_class/section_card.dart';
+=======
+>>>>>>> 3906723 (Initial commit with full project)
 import '../model/products_api_model.dart';
 import '../controller/custom_loader.dart';
 
 import '../getx/related_products_controller.dart';
+<<<<<<< HEAD
+=======
+import '../utils/bar_code.dart';
+import '../utils/details_row.dart';
+import '../utils/icons_row.dart';
+import '../utils/qr_code.dart';
+import '../utils/section_card.dart';
+>>>>>>> 3906723 (Initial commit with full project)
 
 class DetailsScreen extends StatefulWidget {
   const DetailsScreen({super.key});
@@ -26,7 +37,11 @@ class _DetailsScreenState extends State<DetailsScreen> {
   bool isLoading = true;
   late ProductsApiModel product;
 
+<<<<<<< HEAD
   final RelatedProductsController relatedController = Get.put(RelatedProductsController());
+=======
+  final  relatedController = Get.find<RelatedProductsController>();
+>>>>>>> 3906723 (Initial commit with full project)
 
   @override
   void initState() {
